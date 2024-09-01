@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+}
+/* logic for switching the tabs */
+.activeTab {
+    background-color: #84a2d8;
+    color: white;
+    font-weight: bold;
+}
+.generatorSection,
+.validatorSection {
+    display: none;
+}
+.activeSection {
+    display: block;
+}
+
+body{
+    background-color: #112d4e; 
+}
+
+.wrapper{
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tabs{
+    margin-bottom: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* tabs parts start */
+
+[data-generatorTab]:hover{
+    scale: 0.99;
+}
+
+[data-generatorTab]{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 230px;
+}
+
+[data-validatorTab]:hover{
+    scale: 0.99;
+}
+
+[data-validatorTab]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 230px;
+}
+/* tabs parts ends */
+
+
+
+/* generator section */
+.generatorSection{
+    background-color: #84a2d8;
+    width: 480px;
+    height: 350px;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.generatorh1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+
+.otpoutput{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+}
+
+.otpcopy:hover{
+    scale: 0.97;
+    
+}
+.otpcopy{
+    /* font-size: larger; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    /* letter-spacing: 2px; */
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.generateButton:hover{
+    scale: 0.98;
+
+}
+.generateButton{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 230px;
+}
+
+/* generatorSection ends */
+
+
+
+/* validator section starts */
+.validatorSection{
+    background-color: #84a2d8;
+    width: 480px;
+    height: 350px;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.validatorh1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+
+.validinput{
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 273px;
+    text-align: center;
+}
+.validatorButton:hover{
+    scale: 0.98;
+
+}
+.validatorButton{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 230px;
+}
+
+/* validator section ends */
+
+.validText{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    top: -30px;
+}

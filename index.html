@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="artworks-000081734512-uyapr8-t500x500.jpg" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- Tab buttons -->
+    <div class="tabs">
+        <button data-generatorTab class="activeTab">Generator</button>
+        <button data-validatorTab>Validator</button>
+    </div>
+
+    <!-- generator section -->
+    <div class="generatorSection activeSection" data-generatorSection>
+        <!-- generator content -->
+        <!-- heading -->
+        <h1 class="generatorh1">OTP GENERATOR</h1>
+
+        <!-- display section -->
+        <div class="otpdisplay">
+            <input class="otpoutput" type="text" placeholder="OTP"  data-outOtp disabled>
+            <button class="otpcopy" data-copyOtp class="copyButton">copy</button>
+        </div>
+
+        <!-- button section -->
+        <button data-generateButton class="generateButton">GENERATE</button>
+    </div>
+    
+    <!-- validate section -->
+    
+    <div class="validatorSection" data-validatorSection>    
+        <!-- heading -->
+        <h1 class="validatorh1">OTP VALIDATOR</h1>
+
+        <!-- display section -->
+        <div>
+            <input class="validinput" type="text" placeholder="ENTER" data-fetchOtp>
+        </div>
+
+        <!-- button section -->
+        <div>
+            <button data-validateButton class="validatorButton">VALIDATE</button>
+        </div>
+
+    </div>
+    
+    <!-- valid section -->
+    <div>
+        <span data-validate class="validText"></span>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
